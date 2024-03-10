@@ -1,0 +1,69 @@
+#contender, #visor, #body{
+    border: solid 4px rgb(0, 4, 255);
+
+}
+#visor, #body{
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%; 
+}
+#contender{
+    height: 60vh;
+    width: 68vw;
+    display: inline-block;  
+}
+#visor{
+    height: 15%;
+    
+}
+#display{
+    width: 99%;
+    top: 60%;
+    border: none;
+    text-align: end;
+}
+#body{
+    height: 70%;
+    width: auto;
+}
+#bodybutton{
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    top: 5%;
+}
+#body .contenderbutton{
+    width: 100%;
+    display: inline;
+}
+#body .contenderbutton .butons{
+    border: solid 4px rgb(2, 2, 2);
+    padding: 1%;
+    display: inline;
+}
+#operation{
+    display: inline-block;
+    width: 25%;
+    height: 70%;
+    position: relative;
+    top: 6%;
+    text-align: end 
+}
+  #operation div{
+    width: 80%;
+    height: 25%;
+  }
+
+  #operation div button{
+    width: 90%;
+    height: 80%;
+    padding: 2%;
+  }
+button{
+    width: 30%;
+    height: 90%;
+    padding: 2%;
+}
+
+
+

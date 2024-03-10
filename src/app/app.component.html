@@ -1,0 +1,43 @@
+<h1>PRIMERA CALCULADORA</h1>
+<div id="contender">
+  <div id="visor">
+    <label style="float: right;">{{history}}</label>
+    <h1><input type="text" id="display" [value]="data"/></h1>
+  </div>
+  <div id="body">
+    <div id="bodybutton">
+      <div class="contenderbutton">
+        <div class="butons"><button (click)="deleteData()">DEL</button></div>
+        <div class="butons"><button (click)="clear()">CLEAR</button></div>
+        <div class="butons"><button>E</button></div>
+      </div>
+      <div class="contenderbutton">
+        <div class="butons"><button (click)="addNumber($event.target)">7</button></div>
+        <div class="butons"><button (click)="addNumber($event.target)">8</button></div>
+        <div class="butons"><button (click)="addNumber($event.target)">9</button></div>
+      </div>
+      <div class="contenderbutton">
+        <div class="butons"><button (click)="addNumber($event.target)">4</button></div>
+        <div class="butons"><button (click)="addNumber($event.target)">5</button></div>
+        <div class="butons"><button (click)="addNumber($event.target)">6</button></div>
+      </div>
+      <div class="contenderbutton">
+        <div class="butons"><button (click)="addNumber($event.target)">1</button></div>
+        <div class="butons"><button (click)="addNumber($event.target)">2</button></div>
+        <div class="butons"><button (click)="addNumber($event.target)">3</button></div>
+      </div>
+      <div class="contenderbutton">
+        <div class="butons"><button (click)="addNumber($event.target)">.</button></div>
+        <div class="butons"><button (click)="addNumber($event.target)">0</button></div>
+        <div class="butons"><button (click)="getResult()">=</button></div>
+      </div>
+    </div>
+    <div id="operation">
+      <div><button [disabled]="lockOperation" (click)="operation($event.target)">/</button></div>
+      <div><button [disabled]="lockOperation" (click)="operation($event.target)">*</button></div>
+      <div><button [disabled]="lockOperation" (click)="operation($event.target)">+</button></div>
+      <div><button [disabled]="lockOperation" (click)="operation($event.target)">-</button></div>
+      <div><button [disabled]="lockOperation" (click)="operation($event.target)">%</button></div>
+    </div>
+  </div>
+</div>
